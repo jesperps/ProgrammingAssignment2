@@ -19,7 +19,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ## makeCacheMatrix can be used to cache any matrix but 
 ## the caching only makes sense if the creation of the matrix is resource intensive - 
 ## like solutions of large matrices (solved with the solve()-function)
-## The get()-fuction returned by makeCacheMatrix can be used to get the matrix 
+## The getoriginalm()-fuction returned by makeCacheMatrix can be used to get the matrix 
 ## which was used calling the makeCacheMatrix
 ## e.g mcm$get()
         
