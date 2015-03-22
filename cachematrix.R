@@ -21,7 +21,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ## like solutions of large matrices (solved with the solve()-function)
 ## The getoriginalm()-fuction returned by makeCacheMatrix can be used to get the matrix 
 ## which was used calling the makeCacheMatrix
-## e.g mcm$get()
+## e.g mcm$getoriginalm()
         
         #initialize m-variable to be shure that m hasn't been used before
         m<-NULL
