@@ -53,10 +53,11 @@ cacheSolve <- function(x, ...) {
 ##      cacheSolve(mcm) #computes and caches the inverse of m-matrix and returns the result
 ##      cacheSolve(mcm) #returnes the previously cached result
 
-        #Checks if getmatrix()-function has a cached value, if so returning the value
-        if(!is.null(x$getmatrix())){
+        #Checks if getmatrix()-function returns a cached value, if so returning the value
+        cacheresult<-x$getmatrix()
+        if(!is.null(cacheresult)){
                 message("getting cached data")
-                return(x$getmatrix())
+                return(cacheresult)
         } else { #computes the inverse and caches the computation with setmatrix()-function
                 s<-solve(x$getoriginalm())
                 x$setmatrix(s)
